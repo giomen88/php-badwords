@@ -9,19 +9,17 @@ Stampiamo di nuovo il paragrafo e la sua nuova lunghezza.
 
 $password = $_GET["password"];
 
-$text = "La tua password è: $password" ;
+echo $text = "La tua password è: $password" ;
 
-echo $text;
-
-echo '<pre><br/></pre>';
+echo '<br/>';
 
 echo strlen($text);
 
-echo '<pre><br/></pre>';
+echo '<br/>';
 
-$replaced_text = str_replace($password, '***', $text);
+echo $replaced_text = str_replace($password, '***', $text);
 
-echo '<pre><br/></pre>';
+echo '<br/>';
 
 echo strlen($replaced_text);
 
