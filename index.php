@@ -7,13 +7,13 @@ Recuperiamo la parola da censurare via PHP e  sostituiamo tutte le sue occorrenz
 Stampiamo di nuovo il paragrafo e la sua nuova lunghezza.
 */
 
-$password = $_GET["password"];
-
-echo $text = "La tua password è: $password" ;
+echo $text = "La tua password è: 1234" ;
 
 echo '<br/>';
 
 echo strlen($text);
+
+$password = $_GET["password"];
 
 echo '<br/>';
 
@@ -22,6 +22,5 @@ echo $replaced_text = str_replace($password, '***', $text);
 echo '<br/>';
 
 echo strlen($replaced_text);
-
 
 ?>
